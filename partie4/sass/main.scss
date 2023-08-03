@@ -1,0 +1,72 @@
+.presentation_detenteur{
+    font-weight: bold;
+    font-size: 18px;
+}
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 300px;
+    opacity: 0.3;
+}
+.sujet_List{
+    font-size: 18px;
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(150, 200, 50);
+
+}
+.presentation{
+    background-image: url("../images/R.jfif");
+    background-repeat: no-repeat;
+    
+}
+.photo {
+    p{
+        color: blueviolet;
+    }
+    
+}
+.photo_ex{
+    color: blue;
+}
+.border{
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 5px 5px grey;
+    
+}
+.box{
+    &__1{
+        height: 150px;
+        width: 150px;
+        background-color: aquamarine;
+    }
+    &__2{
+        height: 150px;
+        width: 150px;
+        background-color: aqua;
+    }
+    &__3{
+        height: 150px;
+        width: 150px;
+        background-color: burlywood;
+    }
+}
+.box__B{
+    &__box__a{
+        height: 200px;
+        width: 200px;
+        background-color: blueviolet;
+    }
+    &__box__b{
+        height: 200px;
+        width: 200px;
+        background-color: turquoise;
+    }
+    &__box__c{
+        height: 200px;
+        width: 200px;
+        background-color: cornsilk;
+    }
+}
