@@ -1,5 +1,53 @@
-body {
-  background-color: red;
+.custom1 {
+  font-style: italic;
+  color: blue;
+  text-decoration: line-through;
+  font-size: 30px;
+}
+
+.custom2 {
+  font-style: oblique;
+  color: blueviolet;
+  text-decoration: line-through;
+  font-size: 200px;
+}
+
+.custom3 {
+  font-style: italic;
+  color: green;
+  text-decoration: line-through;
+  font-size: 50px;
+}
+
+.custom4 {
+  font-style: oblique;
+  color: brown;
+  text-decoration: line-through;
+  font-size: 32px;
+}
+
+.boite {
+  border: 1px solid black;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.boite__1 {
+  height: 200px;
+  width: 300px;
+  background-color: blueviolet;
+}
+.boite__2 {
+  height: 300px;
+  width: 300px;
+  background-color: beige;
+}
+.boite__3 {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
 }
 
 /*# sourceMappingURL=style.css.map */

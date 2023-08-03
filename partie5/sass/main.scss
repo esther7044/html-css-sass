@@ -1,3 +1,55 @@
-body{
-    background-color: red;
+ @mixin myTextDecoration{
+    text-decoration: line-through;
+ }
+ @mixin myFs($fs:200px){
+    font-size: $fs;
+ }
+ @mixin blocOption ($height:150px, $width:150px, $color:black){
+    height: $height ;
+    width: $width;
+    background-color: $color;
+ }
+.custom1{
+    font-style: italic;
+    color: blue;
+    @include myTextDecoration();
+    @include myFs(30px);
+}
+.custom2{
+    font-style: oblique;
+    color: blueviolet;
+    @include myTextDecoration();
+    @include myFs();
+
+}
+.custom3{
+    font-style: italic;
+    color:green;
+    @include myTextDecoration();
+    @include myFs(50px);
+
+}
+.custom4{
+    font-style: oblique;
+    color: brown;
+    @include myTextDecoration();
+    @include myFs(32px);
+
+}
+.boite{
+    border: 1px solid black;
+    height: 800px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__1{
+        @include blocOption(200px,300px,blueviolet);
+    }
+    &__2{
+        @include blocOption( 300px,300px,beige );
+    }
+    &__3{
+        @include blocOption(200px,200px,blue);
+    }
 }
