@@ -1,0 +1,85 @@
+@mixin myContent ($bgc:beige,$height:300px, $width:300px,){
+    height: $height;
+    width: $width;
+    background-color: $bgc;
+    
+    
+}
+@mixin flexboxConfig($justifyContent:center, $alignItems:center,$flexDirection:row){
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: $justifyContent;
+    align-items: $alignItems
+}
+.dynamic{
+    border: 5px double gold;
+  div{
+    @include flexboxConfig( space-around,baseline);
+}
+a{
+    text-decoration: none;
+    font-size: 1.2em;
+    &:active{
+        color: blue;
+    }
+    
+}
+&__box1{
+    @include myContent();
+    &:hover{
+        background-color: chocolate
+    }
+}
+&__box2{
+    @include myContent();
+    &:hover{
+        background-color: cornflowerblue
+    }
+}
+&__box3{
+    @include myContent();
+    &:hover{
+        background-color: darkorchid;
+    }
+}
+
+ &__link1{
+    &:hover{
+        color: red;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+}
+ &__link2{
+    &:hover{
+        color:crimson;
+        font-weight: bold;
+    }
+}
+ &__link3{
+    &:hover{
+        color:brown;
+        font-weight: bold;
+        font-style: unset;
+    }
+}
+.card{
+    border: 1px dashed red;
+    margin-top: 15px;
+}
+section{
+    border: 1px dashed black;
+}
+}
+article{
+    @include myContent(rgb(143, 241, 241),200px ,200px );
+
+}
+aside{
+    @include myContent( white, 200px, 200px);
+    padding-left: 5px;
+    p{
+        background-color: cyan;
+    }
+}

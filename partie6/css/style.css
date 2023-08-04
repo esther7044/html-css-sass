@@ -1,3 +1,79 @@
+.dynamic {
+  border: 5px double gold;
+}
+.dynamic div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.dynamic a {
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.dynamic a:active {
+  color: blue;
+}
+.dynamic__box1 {
+  height: 300px;
+  width: 300px;
+  background-color: beige;
+}
+.dynamic__box1:hover {
+  background-color: chocolate;
+}
+.dynamic__box2 {
+  height: 300px;
+  width: 300px;
+  background-color: beige;
+}
+.dynamic__box2:hover {
+  background-color: cornflowerblue;
+}
+.dynamic__box3 {
+  height: 300px;
+  width: 300px;
+  background-color: beige;
+}
+.dynamic__box3:hover {
+  background-color: darkorchid;
+}
+.dynamic__link1:hover {
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+}
+.dynamic__link2:hover {
+  color: crimson;
+  font-weight: bold;
+}
+.dynamic__link3:hover {
+  color: brown;
+  font-weight: bold;
+  font-style: unset;
+}
+.dynamic .card {
+  border: 1px dashed red;
+  margin-top: 15px;
+}
+.dynamic section {
+  border: 1px dashed black;
+}
 
+article {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(143, 241, 241);
+}
+
+aside {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  padding-left: 5px;
+}
+aside p {
+  background-color: cyan;
+}
 
 /*# sourceMappingURL=style.css.map */
